@@ -89,6 +89,7 @@
     font-weight: 600;
     line-height: 34px;
     margin-bottom: 8px;
+    color: var(--crank-white);
 }
 
 .testimonial-one__client-name a {
