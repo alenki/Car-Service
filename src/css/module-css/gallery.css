@@ -565,6 +565,7 @@
     font-weight: 600;
     line-height: 34px;
     margin-bottom: 8px;
+    color: var(--crank-white);
 }
 
 .gallery-four__title-box h3 a {
