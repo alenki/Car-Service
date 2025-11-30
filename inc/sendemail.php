@@ -1,17 +1,17 @@
 <?php
 
 // Define Host Info || Who is sending emails?
-define("HOST_NAME", "Poitech Mailer");
-define("HOST_EMAIL", "poitech@mail.com");
+define("HOST_NAME", "KARAF Mail");
+define("HOST_EMAIL", "okaraf07@gmail.com");
 
 // Define SMTP Credentials || Gmail Informations
-define("SMTP_EMAIL", "mail@gmail.com");
-define("SMTP_PASSWORD", "your_gmail_pass"); // read documentations
+define("SMTP_EMAIL", "okaraf07@gmail.com");
+define("SMTP_PASSWORD", "zexx yrfx ntyk tujo"); // read documentations
 
 
 // Define Recipent Info ||  Who will get this email?
-define("RECIPIENT_NAME", "John Doe");
-define("RECIPIENT_EMAIL", "jhon@mail.com");
+define("RECIPIENT_NAME", "Omar Karaf");
+define("RECIPIENT_EMAIL", "okaraf07@gmail.com");
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -79,7 +79,11 @@ try {
 	$mail->Body .= 'message: ' . "<br>" . $message;
 
 	$mail->send();
-	echo "<div class='inner success'><p class='success'>Thanks for contacting us. We will contact you ASAP!</p></div><!-- /.inner -->";
+	echo '<script language="javascript">';
+	echo 'alert("Thanks for contacting us. We will contact you ASAP!")';
+	echo '</script>';
 } catch (Exception $e) {
-	echo "<div class='inner error'><p class='error'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p></div><!-- /.inner -->";
+	echo '<script language="javascript">';
+	echo "alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}')";
+	echo '</script>';
 }
