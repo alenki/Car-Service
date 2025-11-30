@@ -32,6 +32,25 @@
   --crank-bdr-color-rgb: 225, 225, 225;
 }
 
+.map_custom {
+  position: relative;
+  display: block;
+  border: none;
+  height: 310px;
+  width: 100%;
+  filter: grayscale(1);
+  border-radius: 20px;
+}
+
+.map_contact {
+  position: relative;
+  display: block;
+  border: none;
+  height: 520px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .row {
   --bs-gutter-x: 30px;
 }
