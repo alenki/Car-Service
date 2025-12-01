@@ -614,6 +614,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 15px 0 15px 0;
 }
 
 .about-four__points-count {
